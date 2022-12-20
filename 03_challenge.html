@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge: Change a Webpage Color</title>
+  <style>
+    body {
+      background-color: darkgoldenrod;
+    }
+    div {
+      margin-top:300px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+    }
+
+    .name {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 3px;
+      color: white;
+    }
+    #clicker {
+      background-color: rgb(7, 7, 97);
+      border-color: rgb(7, 7, 97); color: white; padding: 10px;
+      font-size: 30px;
+      border-radius: 15px;
+
+    }
+    #clicker:hover {
+      background-color: green; border-color: green;
+      color: black;
+      ;
+    }
+    img {
+      width: 50px;
+    }
+    img:hover {
+      border-radius: 50%;
+      background-color:rgb(155, 230, 253);
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p class="name">Click here to change background color</p>
+    <button id="clicker">Try it <img src="https://www.pngmart.com/files/15/Happy-Emoji-PNG.png" alt="emoji"></button>
+  </div>
+  <script>
+   const clicker = document.getElementById("clicker");
+   clicker.addEventListener("click", function onClick(event){
+    document.body.style.backgroundColor = "salmon";}); 
+    
+  </script>
+</body>
+</html>

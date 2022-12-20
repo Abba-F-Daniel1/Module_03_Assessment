@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grade Calculator</title>
+</head>
+<body>
+  <script>
+    let t = prompt("What is your CA score: from 0 - 100?");
+
+    if (t<=100 && t>=70) {
+      alert("Wow!, you have an A!");
+      alert("Congratulations!");
+    } else if (t<=69 && t>=61) {
+      alert("Yeah!, you got B!");
+      alert("Very good!");
+    }
+    else if (t<=60 && t>=50) {
+      alert("You got C grade");
+      alert("Good!");
+    } 
+    else {
+      alert("You got F grade");
+      alert("You can do better next time");
+    }
+  </script>
+</body>
+</html>
